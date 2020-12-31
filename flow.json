@@ -50,23 +50,6 @@
         "autoInit": "on"
     },
     {
-        "id": "326ce2f.8d02d1e",
-        "type": "ui_group",
-        "name": "Alexa Speak",
-        "tab": "fc4efe2d.639d2",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "fc4efe2d.639d2",
-        "type": "ui_tab",
-        "name": "Alexa Speak",
-        "icon": "speaker",
-        "order": 2
-    },
-    {
         "id": "9836075f.042548",
         "type": "ui_base",
         "theme": {
@@ -164,96 +147,11 @@
         }
     },
     {
-        "id": "7bea4aa8.d8cdb4",
-        "type": "ui_group",
-        "name": "Choose",
-        "tab": "d90ac71.2bb0038",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "39eba160.64cc2e",
-        "type": "ui_group",
-        "name": "Controls",
-        "tab": "d90ac71.2bb0038",
-        "order": 2,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "c67b7b1.78a7c88",
-        "type": "ui_group",
-        "name": "Music",
-        "tab": "d90ac71.2bb0038",
-        "order": 3,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "d90ac71.2bb0038",
-        "type": "ui_tab",
-        "name": "Alexa Play Music",
-        "icon": "speaker",
-        "order": 1,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "481dbda0.4ccdcc",
-        "type": "telegram bot",
-        "botname": "shchtraccarbot",
-        "usernames": "",
-        "chatids": "941652596",
-        "baseapiurl": "",
-        "updatemode": "polling",
-        "pollinterval": "300",
-        "usesocks": false,
-        "sockshost": "",
-        "socksport": "6667",
-        "socksusername": "anonymous",
-        "sockspassword": "",
-        "bothost": "",
-        "localbotport": "8443",
-        "publicbotport": "8443",
-        "privatekey": "",
-        "certificate": "",
-        "useselfsignedcertificate": false,
-        "sslterminated": false,
-        "verboselogging": true
-    },
-    {
         "id": "75510789.d44fb",
         "type": "harmonyws-server",
         "name": "Harmony Hub",
         "ip": "192.168.1.114",
         "debug": false
-    },
-    {
-        "id": "7f5eacdc.184e0c",
-        "type": "telegram bot",
-        "botname": "HambledonShopBot",
-        "usernames": "",
-        "chatids": "941652596",
-        "baseapiurl": "",
-        "updatemode": "polling",
-        "pollinterval": "300",
-        "usesocks": false,
-        "sockshost": "",
-        "socksport": "6667",
-        "socksusername": "anonymous",
-        "sockspassword": "",
-        "bothost": "",
-        "localbotport": "8443",
-        "publicbotport": "8443",
-        "privatekey": "",
-        "certificate": "",
-        "useselfsignedcertificate": false,
-        "sslterminated": false,
-        "verboselogging": false
     },
     {
         "id": "d72812bf.ee02e",
@@ -276,14 +174,6 @@
         "target": "Study",
         "host": "192.168.1.238",
         "port": "8009"
-    },
-    {
-        "id": "7847ac36.0207c4",
-        "type": "redmatic-homekit-bridge",
-        "name": "Pear Tree Cottage",
-        "username": "0E:3E:4E:48:18:3A",
-        "pincode": "499-01-142",
-        "port": "51067"
     },
     {
         "id": "914c287.6aa0ed8",
@@ -725,70 +615,12 @@
         "language": "en",
         "ip": "192.168.1.238",
         "port": "8009",
-        "volume": "",
+        "volume": "40",
         "x": 510,
         "y": 480,
         "wires": [
             [
                 "e59f4895.6a1c58"
-            ]
-        ]
-    },
-    {
-        "id": "1ecdc04.567394",
-        "type": "castv2-sender",
-        "z": "da40c03a.ac762",
-        "name": "Study",
-        "connection": "37ee673b.cef5c8",
-        "spotifyAccessToken": "BQDGcsR6vAEvz6w4HB3aa2C-PsZzpgyEd7D67Jdd5SopdVaZL7B0KWCn67TkhOeBjXFNgk1O711z57Ahyq5xbTb0vp3dFtlf8sH-87eWKRmOvJPEupKrcAAR7gTf7cUj14vwE7i6jxh-oIhrX7LLZ2TMCmYCzZp6DjpTTG718STqThLLdrbhfEFflWQi4b-yQb9damkIcjX4xgUwd2CkJLQMKjpxtOJPGLuCA8nw2yqvhDoZRd9zlM6DXdUHmZB1Lnvk_-eDrddrrZXGlEQO4g",
-        "spotifyAccessTokenExpiration": "",
-        "spotifyDeviceName": "",
-        "x": 710,
-        "y": 840,
-        "wires": [
-            [
-                "f746de98.85bba"
-            ]
-        ]
-    },
-    {
-        "id": "f746de98.85bba",
-        "type": "debug",
-        "z": "da40c03a.ac762",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1030,
-        "y": 740,
-        "wires": []
-    },
-    {
-        "id": "8f5da25a.a146d",
-        "type": "inject",
-        "z": "da40c03a.ac762",
-        "name": "",
-        "props": [
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "str",
-        "x": 100,
-        "y": 700,
-        "wires": [
-            [
-                "49651a9a.eb2ff4"
             ]
         ]
     },
@@ -830,49 +662,6 @@
         "x": 810,
         "y": 100,
         "wires": []
-    },
-    {
-        "id": "49651a9a.eb2ff4",
-        "type": "json",
-        "z": "da40c03a.ac762",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 250,
-        "y": 740,
-        "wires": [
-            [
-                "7fb56edc.75d13"
-            ]
-        ]
-    },
-    {
-        "id": "7fb56edc.75d13",
-        "type": "change",
-        "z": "da40c03a.ac762",
-        "name": "",
-        "rules": [
-            {
-                "t": "move",
-                "p": "payload.data",
-                "pt": "msg",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 390,
-        "y": 640,
-        "wires": [
-            [
-                "1ecdc04.567394"
-            ]
-        ]
     },
     {
         "id": "2ec30956.9fe706",
@@ -929,8 +718,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 220,
-        "y": 980,
+        "x": 380,
+        "y": 800,
         "wires": [
             [
                 "d8b87bd2.be3618"
@@ -946,11 +735,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 440,
-        "y": 900,
+        "x": 790,
+        "y": 800,
         "wires": []
     },
     {
@@ -991,8 +781,8 @@
         "spotifyAccessToken": "BQDGcsR6vAEvz6w4HB3aa2C-PsZzpgyEd7D67Jdd5SopdVaZL7B0KWCn67TkhOeBjXFNgk1O711z57Ahyq5xbTb0vp3dFtlf8sH-87eWKRmOvJPEupKrcAAR7gTf7cUj14vwE7i6jxh-oIhrX7LLZ2TMCmYCzZp6DjpTTG718STqThLLdrbhfEFflWQi4b-yQb9damkIcjX4xgUwd2CkJLQMKjpxtOJPGLuCA8nw2yqvhDoZRd9zlM6DXdUHmZB1Lnvk_-eDrddrrZXGlEQO4g",
         "spotifyAccessTokenExpiration": "",
         "spotifyDeviceName": "",
-        "x": 390,
-        "y": 820,
+        "x": 590,
+        "y": 800,
         "wires": [
             [
                 "76308e9a.fc13f"
@@ -1123,7 +913,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"On\":true,\"Brightness\":100,\"Hue\":100,\"Saturation\":100,\"ColorTemperature\":100}",
+        "payload": "{\"On\":true,\"Brightness\":50,\"Hue\":100,\"Saturation\":100,\"ColorTemperature\":100}",
         "payloadType": "json",
         "x": 110,
         "y": 20,
