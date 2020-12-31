@@ -1,1 +1,1496 @@
-[]
+[
+    {
+        "id": "4a5ee1ae.9e885",
+        "type": "tab",
+        "label": "Smartthings",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b23dd828.06cba8",
+        "type": "tab",
+        "label": "Harmony",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "da40c03a.ac762",
+        "type": "tab",
+        "label": "Spotify",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e5b48919.c32ed8",
+        "type": "tab",
+        "label": "Homebridge",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "6cc71b69.c5d98c",
+        "type": "smartthings-config",
+        "name": "",
+        "token": "c1ddeb51-5ca7-4e87-b72b-4f6857a6041d"
+    },
+    {
+        "id": "ca741fe2.6647b",
+        "type": "alexa-remote-account",
+        "name": "Alexa Account",
+        "authMethod": "proxy",
+        "proxyOwnIp": "192.168.1.10",
+        "proxyPort": "3456",
+        "cookieFile": "authFile",
+        "refreshInterval": "3",
+        "alexaServiceHost": "alexa.amazon.co.uk",
+        "amazonPage": "amazon.co.uk",
+        "acceptLanguage": "en-UK",
+        "userAgent": "",
+        "useWsMqtt": "on",
+        "autoInit": "on"
+    },
+    {
+        "id": "326ce2f.8d02d1e",
+        "type": "ui_group",
+        "name": "Alexa Speak",
+        "tab": "fc4efe2d.639d2",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fc4efe2d.639d2",
+        "type": "ui_tab",
+        "name": "Alexa Speak",
+        "icon": "speaker",
+        "order": 2
+    },
+    {
+        "id": "9836075f.042548",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Pear Tree Cottage",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 36,
+                "sy": 36,
+                "gx": 4,
+                "gy": 4,
+                "cx": 4,
+                "cy": 4,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7bea4aa8.d8cdb4",
+        "type": "ui_group",
+        "name": "Choose",
+        "tab": "d90ac71.2bb0038",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "39eba160.64cc2e",
+        "type": "ui_group",
+        "name": "Controls",
+        "tab": "d90ac71.2bb0038",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c67b7b1.78a7c88",
+        "type": "ui_group",
+        "name": "Music",
+        "tab": "d90ac71.2bb0038",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d90ac71.2bb0038",
+        "type": "ui_tab",
+        "name": "Alexa Play Music",
+        "icon": "speaker",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "481dbda0.4ccdcc",
+        "type": "telegram bot",
+        "botname": "shchtraccarbot",
+        "usernames": "",
+        "chatids": "941652596",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": true
+    },
+    {
+        "id": "75510789.d44fb",
+        "type": "harmonyws-server",
+        "name": "Harmony Hub",
+        "ip": "192.168.1.114",
+        "debug": false
+    },
+    {
+        "id": "7f5eacdc.184e0c",
+        "type": "telegram bot",
+        "botname": "HambledonShopBot",
+        "usernames": "",
+        "chatids": "941652596",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "d72812bf.ee02e",
+        "type": "spotify-auth",
+        "name": "Spotify OAuth2",
+        "scope": "user-read-currently-playing"
+    },
+    {
+        "id": "37ee673b.cef5c8",
+        "type": "castv2-connection",
+        "name": "",
+        "target": "",
+        "host": "192.168.1.238",
+        "port": "8009"
+    },
+    {
+        "id": "a315b9f5.b6cdb8",
+        "type": "castv2-connection",
+        "name": "",
+        "target": "Study",
+        "host": "192.168.1.238",
+        "port": "8009"
+    },
+    {
+        "id": "7847ac36.0207c4",
+        "type": "redmatic-homekit-bridge",
+        "name": "Pear Tree Cottage",
+        "username": "0E:3E:4E:48:18:3A",
+        "pincode": "499-01-142",
+        "port": "51067"
+    },
+    {
+        "id": "914c287.6aa0ed8",
+        "type": "hb-conf",
+        "username": "499-01-142"
+    },
+    {
+        "id": "9008fdf6.fa774",
+        "type": "ui_tab",
+        "name": "Temperatures",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2a2a8a9.b7d3476",
+        "type": "ui_group",
+        "name": "Outside Temperatures",
+        "tab": "9008fdf6.fa774",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "56e6bb2d.99ee04",
+        "type": "ui_group",
+        "name": "Inside Temperatures",
+        "tab": "9008fdf6.fa774",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f555286a.548048",
+        "type": "ui_group",
+        "name": "Status",
+        "tab": "9008fdf6.fa774",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "6105b1aa.1791e8",
+        "type": "smartthings-node-onoff",
+        "z": "4a5ee1ae.9e885",
+        "conf": "6cc71b69.c5d98c",
+        "name": "Study Stand Lamp",
+        "device": "ec4a88b5-591d-4ff0-8f20-c783b934cd40",
+        "x": 430,
+        "y": 300,
+        "wires": [
+            [
+                "54c6e855.35824"
+            ]
+        ]
+    },
+    {
+        "id": "54c6e855.35824",
+        "type": "debug",
+        "z": "4a5ee1ae.9e885",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "a757e2b5.9dd358",
+        "type": "smartthings-node-onoff",
+        "z": "4a5ee1ae.9e885",
+        "conf": "6cc71b69.c5d98c",
+        "name": "Study Desk Lamp",
+        "device": "94cc7ce0-f25f-4df5-99c2-e68f0e4bec2f",
+        "x": 430,
+        "y": 400,
+        "wires": [
+            [
+                "54c6e855.35824"
+            ]
+        ]
+    },
+    {
+        "id": "71e8ed09.f84d04",
+        "type": "function",
+        "z": "4a5ee1ae.9e885",
+        "name": "Turn On",
+        "func": "var msg = {\n    topic: \"switch\",\n    payload: {\n        value: 1\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 220,
+        "y": 300,
+        "wires": [
+            [
+                "6105b1aa.1791e8",
+                "a757e2b5.9dd358"
+            ]
+        ]
+    },
+    {
+        "id": "1f7ff47c.1f3644",
+        "type": "inject",
+        "z": "4a5ee1ae.9e885",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 180,
+        "wires": [
+            [
+                "71e8ed09.f84d04",
+                "20473db6.98279a"
+            ]
+        ]
+    },
+    {
+        "id": "a27e2d39.99ba28",
+        "type": "smartthings-node-onoff",
+        "z": "4a5ee1ae.9e885",
+        "conf": "6cc71b69.c5d98c",
+        "name": "Study Stand Lamp",
+        "device": "ec4a88b5-591d-4ff0-8f20-c783b934cd40",
+        "x": 430,
+        "y": 580,
+        "wires": [
+            [
+                "57fa7b73.ca3704"
+            ]
+        ]
+    },
+    {
+        "id": "57fa7b73.ca3704",
+        "type": "debug",
+        "z": "4a5ee1ae.9e885",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "186da003.27306",
+        "type": "smartthings-node-onoff",
+        "z": "4a5ee1ae.9e885",
+        "conf": "6cc71b69.c5d98c",
+        "name": "Study Desk Lamp",
+        "device": "94cc7ce0-f25f-4df5-99c2-e68f0e4bec2f",
+        "x": 430,
+        "y": 680,
+        "wires": [
+            [
+                "57fa7b73.ca3704"
+            ]
+        ]
+    },
+    {
+        "id": "c0a03666.4953b8",
+        "type": "function",
+        "z": "4a5ee1ae.9e885",
+        "name": "Turn Off",
+        "func": "var msg = {\n    topic: \"switch\",\n    payload: {\n        value: 0\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 220,
+        "y": 580,
+        "wires": [
+            [
+                "a27e2d39.99ba28",
+                "186da003.27306"
+            ]
+        ]
+    },
+    {
+        "id": "e0d40e08.e8fb28",
+        "type": "inject",
+        "z": "4a5ee1ae.9e885",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 460,
+        "wires": [
+            [
+                "c0a03666.4953b8"
+            ]
+        ]
+    },
+    {
+        "id": "20473db6.98279a",
+        "type": "alexa-remote-routine",
+        "z": "4a5ee1ae.9e885",
+        "name": "",
+        "account": "ca741fe2.6647b",
+        "routineNode": {
+            "type": "speak",
+            "payload": {
+                "type": "announcement",
+                "text": {
+                    "type": "str",
+                    "value": "hello"
+                },
+                "devices": [
+                    "G090LF096467321H"
+                ]
+            }
+        },
+        "x": 660,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7a8d4319.e2b4b4",
+        "type": "inject",
+        "z": "4a5ee1ae.9e885",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "update",
+        "payloadType": "str",
+        "x": 110,
+        "y": 800,
+        "wires": [
+            [
+                "2d0d36bd.aa7eb2"
+            ]
+        ]
+    },
+    {
+        "id": "2d0d36bd.aa7eb2",
+        "type": "smartthings-node-onoff",
+        "z": "4a5ee1ae.9e885",
+        "conf": "6cc71b69.c5d98c",
+        "name": "Study Desk Lamp",
+        "device": "94cc7ce0-f25f-4df5-99c2-e68f0e4bec2f",
+        "x": 420,
+        "y": 820,
+        "wires": [
+            [
+                "ced4f3ea.93106"
+            ]
+        ]
+    },
+    {
+        "id": "ced4f3ea.93106",
+        "type": "debug",
+        "z": "4a5ee1ae.9e885",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "51980e53.11cb68",
+        "type": "harmonyws-activity",
+        "z": "b23dd828.06cba8",
+        "name": "",
+        "server": "75510789.d44fb",
+        "activity": "41843816",
+        "x": 310,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "56af5285.099b7c",
+        "type": "harmonyws-command",
+        "z": "b23dd828.06cba8",
+        "name": "",
+        "server": "75510789.d44fb",
+        "activity": "57410337",
+        "command": "57410337:PowerToggle",
+        "hold": "0",
+        "repeat": "1",
+        "delay": "0",
+        "x": 340,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2fe37ec3.926e72",
+        "type": "harmonyws-sequence",
+        "z": "b23dd828.06cba8",
+        "name": "",
+        "server": "75510789.d44fb",
+        "sequence": [
+            {
+                "type": "activity",
+                "activity": "41843816"
+            },
+            {
+                "type": "command",
+                "activity": "57409872",
+                "command": null
+            }
+        ],
+        "x": 410,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "575278ff.836b18",
+        "type": "spotify",
+        "z": "da40c03a.ac762",
+        "name": "",
+        "auth": "d72812bf.ee02e",
+        "api": "getMyCurrentPlayingTrack",
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "78462181.d6421"
+            ]
+        ]
+    },
+    {
+        "id": "cf1b4c8d.3ae53",
+        "type": "inject",
+        "z": "da40c03a.ac762",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 300,
+        "wires": [
+            [
+                "575278ff.836b18"
+            ]
+        ]
+    },
+    {
+        "id": "78462181.d6421",
+        "type": "debug",
+        "z": "da40c03a.ac762",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "9a2285a1.f576f8",
+        "type": "cast-to-client",
+        "z": "da40c03a.ac762",
+        "name": "",
+        "url": "",
+        "contentType": "",
+        "message": "Testing Testing",
+        "language": "en",
+        "ip": "192.168.1.238",
+        "port": "8009",
+        "volume": "",
+        "x": 510,
+        "y": 480,
+        "wires": [
+            [
+                "e59f4895.6a1c58"
+            ]
+        ]
+    },
+    {
+        "id": "1ecdc04.567394",
+        "type": "castv2-sender",
+        "z": "da40c03a.ac762",
+        "name": "Study",
+        "connection": "37ee673b.cef5c8",
+        "spotifyAccessToken": "BQDGcsR6vAEvz6w4HB3aa2C-PsZzpgyEd7D67Jdd5SopdVaZL7B0KWCn67TkhOeBjXFNgk1O711z57Ahyq5xbTb0vp3dFtlf8sH-87eWKRmOvJPEupKrcAAR7gTf7cUj14vwE7i6jxh-oIhrX7LLZ2TMCmYCzZp6DjpTTG718STqThLLdrbhfEFflWQi4b-yQb9damkIcjX4xgUwd2CkJLQMKjpxtOJPGLuCA8nw2yqvhDoZRd9zlM6DXdUHmZB1Lnvk_-eDrddrrZXGlEQO4g",
+        "spotifyAccessTokenExpiration": "",
+        "spotifyDeviceName": "",
+        "x": 710,
+        "y": 840,
+        "wires": [
+            [
+                "f746de98.85bba"
+            ]
+        ]
+    },
+    {
+        "id": "f746de98.85bba",
+        "type": "debug",
+        "z": "da40c03a.ac762",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "8f5da25a.a146d",
+        "type": "inject",
+        "z": "da40c03a.ac762",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "str",
+        "x": 100,
+        "y": 700,
+        "wires": [
+            [
+                "49651a9a.eb2ff4"
+            ]
+        ]
+    },
+    {
+        "id": "fa9250d6.1d8d5",
+        "type": "inject",
+        "z": "da40c03a.ac762",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "Hello to Jason Isaacs",
+        "payloadType": "str",
+        "x": 600,
+        "y": 100,
+        "wires": [
+            [
+                "c9a24bb9.28a0a8"
+            ]
+        ]
+    },
+    {
+        "id": "c9a24bb9.28a0a8",
+        "type": "play audio",
+        "z": "da40c03a.ac762",
+        "name": "",
+        "voice": "0",
+        "x": 810,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "49651a9a.eb2ff4",
+        "type": "json",
+        "z": "da40c03a.ac762",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 740,
+        "wires": [
+            [
+                "7fb56edc.75d13"
+            ]
+        ]
+    },
+    {
+        "id": "7fb56edc.75d13",
+        "type": "change",
+        "z": "da40c03a.ac762",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.data",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 640,
+        "wires": [
+            [
+                "1ecdc04.567394"
+            ]
+        ]
+    },
+    {
+        "id": "2ec30956.9fe706",
+        "type": "inject",
+        "z": "da40c03a.ac762",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 480,
+        "wires": [
+            [
+                "9a2285a1.f576f8"
+            ]
+        ]
+    },
+    {
+        "id": "e59f4895.6a1c58",
+        "type": "debug",
+        "z": "da40c03a.ac762",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "6494e879.4d7a78",
+        "type": "function",
+        "z": "da40c03a.ac762",
+        "name": "",
+        "func": "return {\n    payload: {\n        type: \"MUTE\"\n    }\n};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 220,
+        "y": 980,
+        "wires": [
+            [
+                "d8b87bd2.be3618"
+            ]
+        ]
+    },
+    {
+        "id": "76308e9a.fc13f",
+        "type": "debug",
+        "z": "da40c03a.ac762",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "d98b54a4.e4b8d8",
+        "type": "inject",
+        "z": "da40c03a.ac762",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 800,
+        "wires": [
+            [
+                "6494e879.4d7a78"
+            ]
+        ]
+    },
+    {
+        "id": "d8b87bd2.be3618",
+        "type": "castv2-sender",
+        "z": "da40c03a.ac762",
+        "name": "Study",
+        "connection": "37ee673b.cef5c8",
+        "spotifyAccessToken": "BQDGcsR6vAEvz6w4HB3aa2C-PsZzpgyEd7D67Jdd5SopdVaZL7B0KWCn67TkhOeBjXFNgk1O711z57Ahyq5xbTb0vp3dFtlf8sH-87eWKRmOvJPEupKrcAAR7gTf7cUj14vwE7i6jxh-oIhrX7LLZ2TMCmYCzZp6DjpTTG718STqThLLdrbhfEFflWQi4b-yQb9damkIcjX4xgUwd2CkJLQMKjpxtOJPGLuCA8nw2yqvhDoZRd9zlM6DXdUHmZB1Lnvk_-eDrddrrZXGlEQO4g",
+        "spotifyAccessTokenExpiration": "",
+        "spotifyDeviceName": "",
+        "x": 390,
+        "y": 820,
+        "wires": [
+            [
+                "76308e9a.fc13f"
+            ]
+        ]
+    },
+    {
+        "id": "cb440f85.abd5c",
+        "type": "hb-status",
+        "z": "e5b48919.c32ed8",
+        "name": "Study Desk Motion Sensor",
+        "Homebridge": "Pear Tree Cottage",
+        "Manufacturer": "SmartThings-v2",
+        "Service": "Temperature Sensor",
+        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThings-v2Study Desk Motion Sensor0000008A",
+        "conf": "914c287.6aa0ed8",
+        "x": 430,
+        "y": 540,
+        "wires": [
+            [
+                "cbeb9c03.ffdeb"
+            ]
+        ]
+    },
+    {
+        "id": "7fdebd5f.3cd544",
+        "type": "inject",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 540,
+        "wires": [
+            [
+                "cb440f85.abd5c",
+                "1a65275e.7499d9",
+                "bb02adb4.65b55",
+                "bea155f6.22bdd8",
+                "1a875af1.57cc55",
+                "db15f1aa.ba748",
+                "fa51d09c.85874",
+                "b10523a2.a4a1f",
+                "cb500180.f07ff"
+            ]
+        ]
+    },
+    {
+        "id": "1a65275e.7499d9",
+        "type": "hb-status",
+        "z": "e5b48919.c32ed8",
+        "name": "Front Door Sensor",
+        "Homebridge": "Pear Tree Cottage",
+        "Manufacturer": "SmartThings-v2",
+        "Service": "Temperature Sensor",
+        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThings-v2Front Door Sensor0000008A",
+        "conf": "914c287.6aa0ed8",
+        "x": 410,
+        "y": 440,
+        "wires": [
+            [
+                "2c610e22.12c9c2"
+            ]
+        ]
+    },
+    {
+        "id": "bb02adb4.65b55",
+        "type": "hb-status",
+        "z": "e5b48919.c32ed8",
+        "name": "Landing Motion Sensor",
+        "Homebridge": "Pear Tree Cottage",
+        "Manufacturer": "SmartThings-v2",
+        "Service": "Temperature Sensor",
+        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThings-v2Landing Motion Sensor0000008A",
+        "conf": "914c287.6aa0ed8",
+        "x": 430,
+        "y": 340,
+        "wires": [
+            [
+                "5c11d56d.0c01dc"
+            ]
+        ]
+    },
+    {
+        "id": "2334ed96.2588a2",
+        "type": "hb-control",
+        "z": "e5b48919.c32ed8",
+        "name": "Study Stand Lamp",
+        "Homebridge": "Pear Tree Cottage",
+        "Manufacturer": "innr",
+        "Service": "Lightbulb",
+        "device": "Pear Tree Cottage0E:3E:4E:48:18:3AinnrStudy Stand Lamp00000043",
+        "conf": "914c287.6aa0ed8",
+        "x": 390,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "d11560a9.df469",
+        "type": "inject",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"On\":true,\"Brightness\":100,\"Hue\":100,\"Saturation\":100,\"ColorTemperature\":100}",
+        "payloadType": "json",
+        "x": 110,
+        "y": 20,
+        "wires": [
+            [
+                "2334ed96.2588a2"
+            ]
+        ]
+    },
+    {
+        "id": "5c11d56d.0c01dc",
+        "type": "ui_gauge",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "group": "56e6bb2d.99ee04",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Landing",
+        "label": "C",
+        "format": "{{payload.CurrentTemperature}}",
+        "min": "-5",
+        "max": "35",
+        "colors": [
+            "#0027b3",
+            "#00bd06",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 870,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "bea155f6.22bdd8",
+        "type": "hb-status",
+        "z": "e5b48919.c32ed8",
+        "name": "Garage Motion Sensor",
+        "Homebridge": "Pear Tree Cottage",
+        "Manufacturer": "SmartThings-v2",
+        "Service": "Temperature Sensor",
+        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThings-v2Garage Motion Sensor0000008A",
+        "conf": "914c287.6aa0ed8",
+        "x": 420,
+        "y": 620,
+        "wires": [
+            [
+                "40771750.bb7618"
+            ]
+        ]
+    },
+    {
+        "id": "1a875af1.57cc55",
+        "type": "hb-status",
+        "z": "e5b48919.c32ed8",
+        "name": "Garage Outdoor Motion Sensor",
+        "Homebridge": "Pear Tree Cottage",
+        "Manufacturer": "SmartThings-v2",
+        "Service": "Temperature Sensor",
+        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThings-v2Garage Outdoor Motion Sensor0000008A",
+        "conf": "914c287.6aa0ed8",
+        "x": 450,
+        "y": 700,
+        "wires": [
+            [
+                "92ea7fee.19995"
+            ]
+        ]
+    },
+    {
+        "id": "db15f1aa.ba748",
+        "type": "hb-status",
+        "z": "e5b48919.c32ed8",
+        "name": "Garage Door Sensor",
+        "Homebridge": "Pear Tree Cottage",
+        "Manufacturer": "SmartThings",
+        "Service": "Temperature Sensor",
+        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThingsGarage Door Sensor0000008A",
+        "conf": "914c287.6aa0ed8",
+        "x": 420,
+        "y": 780,
+        "wires": [
+            [
+                "7c2a5595.9aaa4c"
+            ]
+        ]
+    },
+    {
+        "id": "2c610e22.12c9c2",
+        "type": "ui_gauge",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "group": "2a2a8a9.b7d3476",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Front Door",
+        "label": "C",
+        "format": "{{payload.CurrentTemperature}}",
+        "min": "-5",
+        "max": "35",
+        "colors": [
+            "#0027b3",
+            "#00bd06",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 870,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "cbeb9c03.ffdeb",
+        "type": "ui_gauge",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "group": "56e6bb2d.99ee04",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Study Desk",
+        "label": "C",
+        "format": "{{payload.CurrentTemperature}}",
+        "min": "-5",
+        "max": "35",
+        "colors": [
+            "#0027b3",
+            "#00bd06",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 870,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "40771750.bb7618",
+        "type": "ui_gauge",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "group": "2a2a8a9.b7d3476",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Garage Inside",
+        "label": "C",
+        "format": "{{payload.CurrentTemperature}}",
+        "min": "-5",
+        "max": "35",
+        "colors": [
+            "#0027b3",
+            "#00bd06",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 893,
+        "y": 625,
+        "wires": []
+    },
+    {
+        "id": "92ea7fee.19995",
+        "type": "ui_gauge",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "group": "2a2a8a9.b7d3476",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Garage Outside",
+        "label": "C",
+        "format": "{{payload.CurrentTemperature}}",
+        "min": "-5",
+        "max": "35",
+        "colors": [
+            "#0027b3",
+            "#00bd06",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 890,
+        "y": 685,
+        "wires": []
+    },
+    {
+        "id": "7c2a5595.9aaa4c",
+        "type": "ui_gauge",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "group": "2a2a8a9.b7d3476",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Garage Door Inside",
+        "label": "C",
+        "format": "{{payload.CurrentTemperature}}",
+        "min": "-5",
+        "max": "35",
+        "colors": [
+            "#0027b3",
+            "#00bd06",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 891,
+        "y": 773,
+        "wires": []
+    },
+    {
+        "id": "7ff52c85.fdea94",
+        "type": "ui_text",
+        "z": "e5b48919.c32ed8",
+        "group": "f555286a.548048",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Heating",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 800,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "fa51d09c.85874",
+        "type": "hb-status",
+        "z": "e5b48919.c32ed8",
+        "name": "Heating",
+        "Homebridge": "Pear Tree Cottage",
+        "Manufacturer": "CentraLite",
+        "Service": "Lightbulb",
+        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ACentraLiteHeating00000043",
+        "conf": "914c287.6aa0ed8",
+        "x": 420,
+        "y": 240,
+        "wires": [
+            [
+                "e5a7ad50.75d02"
+            ]
+        ]
+    },
+    {
+        "id": "e5a7ad50.75d02",
+        "type": "function",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "func": "if (msg.payload.On === true) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 620,
+        "y": 240,
+        "wires": [
+            [
+                "7ff52c85.fdea94"
+            ]
+        ]
+    },
+    {
+        "id": "2b5c5d2.9a24fa2",
+        "type": "hb-status",
+        "z": "e5b48919.c32ed8",
+        "name": "Study Desk Motion Sensor",
+        "Homebridge": "Pear Tree Cottage",
+        "Manufacturer": "SmartThings-v2",
+        "Service": "Temperature Sensor",
+        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThings-v2Study Desk Motion Sensor0000008A",
+        "conf": "914c287.6aa0ed8",
+        "x": 440,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b10523a2.a4a1f",
+        "type": "smartthings-node-temperature",
+        "z": "e5b48919.c32ed8",
+        "conf": "6cc71b69.c5d98c",
+        "name": "Study Door Motion Sensor",
+        "device": "95115ac7-950f-4c8b-ac29-c15ddedc6d7a",
+        "x": 400,
+        "y": 880,
+        "wires": [
+            [
+                "65bc3c50.2a8184"
+            ]
+        ]
+    },
+    {
+        "id": "65bc3c50.2a8184",
+        "type": "ui_gauge",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "group": "56e6bb2d.99ee04",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Study Door",
+        "label": "C",
+        "format": "{{payload.value}}",
+        "min": "-5",
+        "max": "35",
+        "colors": [
+            "#0027b3",
+            "#00bd06",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 870,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "4a00be91.a797f",
+        "type": "ui_text",
+        "z": "e5b48919.c32ed8",
+        "group": "f555286a.548048",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Last Update",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "x": 1310,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "cb500180.f07ff",
+        "type": "moment",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "topic": "",
+        "input": "",
+        "inputType": "msg",
+        "inTz": "Europe/London",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "LTS",
+        "locale": "en-GB",
+        "output": "",
+        "outputType": "msg",
+        "outTz": "Europe/London",
+        "x": 340,
+        "y": 100,
+        "wires": [
+            [
+                "4a00be91.a797f"
+            ]
+        ]
+    }
+]
