@@ -1626,8 +1626,8 @@
         "output": "",
         "outputType": "msg",
         "outTz": "Europe/London",
-        "x": 280,
-        "y": 340,
+        "x": 400,
+        "y": 260,
         "wires": [
             [
                 "48490e88.aaba1"
@@ -1646,8 +1646,8 @@
         "label": "Last Update",
         "format": "{{msg.payload}}",
         "layout": "row-center",
-        "x": 670,
-        "y": 320,
+        "x": 630,
+        "y": 260,
         "wires": []
     },
     {
@@ -2519,6 +2519,265 @@
         "wires": [
             [
                 "1f1ed855.0308b8"
+            ]
+        ]
+    },
+    {
+        "id": "18e972ed.a8074d",
+        "type": "ui_switch",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "label": "Master Switch",
+        "tooltip": "",
+        "group": "c168e098.38862",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1460,
+        "y": 820,
+        "wires": [
+            [
+                "306b3d37.009f22",
+                "317ef8f1.a72098",
+                "bda3f6af.ca6bf8",
+                "30d066a8.c5540a",
+                "7508cfea.acdbe",
+                "ff506d03.c0f06",
+                "1f1ed855.0308b8",
+                "161fff6b.ada4f1"
+            ]
+        ]
+    },
+    {
+        "id": "afae3114.ceb2e",
+        "type": "hb-event",
+        "z": "d4bd59e4.4cd548",
+        "name": "Garage Outdoor Motion Sensor",
+        "Homebridge": "Pear Tree Cottage",
+        "Manufacturer": "SmartThings-v2",
+        "Service": "Motion Sensor",
+        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThings-v2Garage Outdoor Motion Sensor00000085",
+        "conf": "914c287.6aa0ed8",
+        "x": 330,
+        "y": 600,
+        "wires": [
+            [
+                "48c297db.c45ab8",
+                "da80954e.167fa8"
+            ]
+        ]
+    },
+    {
+        "id": "48c297db.c45ab8",
+        "type": "debug",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "53a93715.f8d508",
+        "type": "hb-event",
+        "z": "d4bd59e4.4cd548",
+        "name": "Landing Motion Sensor",
+        "Homebridge": "Pear Tree Cottage",
+        "Manufacturer": "SmartThings-v2",
+        "Service": "Motion Sensor",
+        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThings-v2Landing Motion Sensor00000085",
+        "conf": "914c287.6aa0ed8",
+        "x": 300,
+        "y": 660,
+        "wires": [
+            [
+                "713f9bd1.49c984",
+                "c8a9e47f.a3f7f8"
+            ]
+        ]
+    },
+    {
+        "id": "713f9bd1.49c984",
+        "type": "debug",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "7bbaf2.98e2a51",
+        "type": "hb-event",
+        "z": "d4bd59e4.4cd548",
+        "name": "Landing Motion Sensor",
+        "Homebridge": "Pear Tree Cottage",
+        "Manufacturer": "SmartThings-v2",
+        "Service": "Light Sensor",
+        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThings-v2Landing Motion Sensor00000084",
+        "conf": "914c287.6aa0ed8",
+        "x": 280,
+        "y": 780,
+        "wires": [
+            [
+                "a41df575.6ea9c8"
+            ]
+        ]
+    },
+    {
+        "id": "a41df575.6ea9c8",
+        "type": "debug",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "b08e665d.427988",
+        "type": "cast-to-client",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "url": "",
+        "contentType": "",
+        "message": "Testing",
+        "language": "en",
+        "ip": "192.168.1.238",
+        "port": "8009",
+        "volume": "50",
+        "x": 450,
+        "y": 420,
+        "wires": [
+            [
+                "9c800bd1.21a138"
+            ]
+        ]
+    },
+    {
+        "id": "9c800bd1.21a138",
+        "type": "debug",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "40646228.9a6a3c",
+        "type": "inject",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da80954e.167fa8",
+        "type": "cast-to-client",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "url": "",
+        "contentType": "",
+        "message": "Garage Outside Motion",
+        "language": "en",
+        "ip": "192.168.1.238",
+        "port": "8009",
+        "volume": "50",
+        "x": 750,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b7c4fbd5.7e2888",
+        "type": "cast-to-client",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "url": "",
+        "contentType": "",
+        "message": "",
+        "language": "en",
+        "ip": "192.168.1.238",
+        "port": "8009",
+        "volume": "50",
+        "x": 910,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c8a9e47f.a3f7f8",
+        "type": "function",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "func": "if (msg.payload.MotionDetected === true) {\n    msg.payload.message = 'Landing Motion Detected'\n} else {\n    msg.payload.message = ''\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 600,
+        "y": 720,
+        "wires": [
+            [
+                "b7c4fbd5.7e2888"
             ]
         ]
     }
