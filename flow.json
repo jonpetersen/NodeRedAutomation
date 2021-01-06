@@ -35,6 +35,27 @@
         "info": ""
     },
     {
+        "id": "675643bd.a6d5bc",
+        "type": "tab",
+        "label": "Shop",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c4c03242.475c2",
+        "type": "tab",
+        "label": "Cameras",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "678ca26b.9ca2bc",
+        "type": "tab",
+        "label": "Apple Find Me",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "6cc71b69.c5d98c",
         "type": "smartthings-config",
         "name": "",
@@ -270,6 +291,69 @@
         "disp": false,
         "width": "6",
         "collapse": false
+    },
+    {
+        "id": "2d1be433.e4c01c",
+        "type": "telegram bot",
+        "botname": "HambledonShopBot",
+        "usernames": "",
+        "chatids": "941652596",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "a535d6a4.22a118",
+        "type": "telegram bot",
+        "botname": "samplebot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "pollinterval": "300"
+    },
+    {
+        "id": "d8f93858.7b3648",
+        "type": "apple-find-me-account",
+        "name": "Jon",
+        "showfmly": true
+    },
+    {
+        "id": "bb0e754e.70b108",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "77efcdfa.edd224",
+        "order": 1,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "77efcdfa.edd224",
+        "type": "ui_tab",
+        "name": "HomeKit",
+        "icon": "dashboard"
+    },
+    {
+        "id": "d1e30622.0d3aa8",
+        "type": "homekit-accessory",
+        "accessoryName": "Connector",
+        "pinCode": "111-11-111",
+        "port": "",
+        "manufacturer": "Default Manufacturer",
+        "model": "Default Model",
+        "serialNo": "Default Serial Number"
     },
     {
         "id": "6105b1aa.1791e8",
@@ -828,16 +912,16 @@
         "type": "hb-status",
         "z": "e5b48919.c32ed8",
         "name": "Study Desk Motion Sensor",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "SmartThings-v2",
         "Service": "Temperature Sensor",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThings-v2Study Desk Motion Sensor0000008A",
+        "device": "homebridge0E:3E:4E:48:18:3ASmartThings-v2Study Desk Motion Sensor0000008A",
         "conf": "914c287.6aa0ed8",
         "x": 420,
         "y": 220,
         "wires": [
             [
-                "cbeb9c03.ffdeb"
+                "bce557dd.50c268"
             ]
         ]
     },
@@ -890,16 +974,16 @@
         "type": "hb-status",
         "z": "e5b48919.c32ed8",
         "name": "Front Door Sensor",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "SmartThings-v2",
         "Service": "Temperature Sensor",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThings-v2Front Door Sensor0000008A",
+        "device": "homebridge0E:3E:4E:48:18:3ASmartThings-v2Front Door Sensor0000008A",
         "conf": "914c287.6aa0ed8",
         "x": 390,
         "y": 160,
         "wires": [
             [
-                "2c610e22.12c9c2"
+                "f7ae2762.b6a038"
             ]
         ]
     },
@@ -908,16 +992,16 @@
         "type": "hb-status",
         "z": "e5b48919.c32ed8",
         "name": "Landing Motion Sensor",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "SmartThings-v2",
         "Service": "Temperature Sensor",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThings-v2Landing Motion Sensor0000008A",
+        "device": "homebridge0E:3E:4E:48:18:3ASmartThings-v2Landing Motion Sensor0000008A",
         "conf": "914c287.6aa0ed8",
         "x": 410,
         "y": 100,
         "wires": [
             [
-                "5c11d56d.0c01dc"
+                "ec9539fe.8929f8"
             ]
         ]
     },
@@ -986,7 +1070,7 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 680,
+        "x": 1020,
         "y": 100,
         "wires": []
     },
@@ -995,16 +1079,16 @@
         "type": "hb-status",
         "z": "e5b48919.c32ed8",
         "name": "Garage Motion Sensor",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "SmartThings-v2",
         "Service": "Temperature Sensor",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThings-v2Garage Motion Sensor0000008A",
+        "device": "homebridge0E:3E:4E:48:18:3ASmartThings-v2Garage Motion Sensor0000008A",
         "conf": "914c287.6aa0ed8",
         "x": 400,
         "y": 280,
         "wires": [
             [
-                "40771750.bb7618"
+                "6291d32a.e0a3ec"
             ]
         ]
     },
@@ -1013,16 +1097,16 @@
         "type": "hb-status",
         "z": "e5b48919.c32ed8",
         "name": "Garage Outdoor Motion Sensor",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "SmartThings-v2",
         "Service": "Temperature Sensor",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThings-v2Garage Outdoor Motion Sensor0000008A",
+        "device": "homebridge0E:3E:4E:48:18:3ASmartThings-v2Garage Outdoor Motion Sensor0000008A",
         "conf": "914c287.6aa0ed8",
         "x": 430,
         "y": 340,
         "wires": [
             [
-                "92ea7fee.19995"
+                "ed544574.914c18"
             ]
         ]
     },
@@ -1031,16 +1115,16 @@
         "type": "hb-status",
         "z": "e5b48919.c32ed8",
         "name": "Garage Door Sensor",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "SmartThings",
         "Service": "Temperature Sensor",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThingsGarage Door Sensor0000008A",
+        "device": "homebridge0E:3E:4E:48:18:3ASmartThingsGarage Door Sensor0000008A",
         "conf": "914c287.6aa0ed8",
         "x": 400,
         "y": 400,
         "wires": [
             [
-                "7c2a5595.9aaa4c"
+                "1b53e988.df06a6"
             ]
         ]
     },
@@ -1066,7 +1150,7 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 690,
+        "x": 790,
         "y": 160,
         "wires": []
     },
@@ -1092,7 +1176,7 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 690,
+        "x": 790,
         "y": 220,
         "wires": []
     },
@@ -1118,7 +1202,7 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 700,
+        "x": 800,
         "y": 280,
         "wires": []
     },
@@ -1144,7 +1228,7 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 700,
+        "x": 800,
         "y": 340,
         "wires": []
     },
@@ -1170,7 +1254,7 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 710,
+        "x": 810,
         "y": 400,
         "wires": []
     },
@@ -1179,10 +1263,10 @@
         "type": "hb-status",
         "z": "e5b48919.c32ed8",
         "name": "Heating",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "CentraLite",
-        "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ACentraLiteHeating00000043",
+        "Service": "Switch",
+        "device": "homebridge0E:3E:4E:48:18:3ACentraLiteHeating00000049",
         "conf": "914c287.6aa0ed8",
         "x": 360,
         "y": 460,
@@ -1237,10 +1321,10 @@
         "type": "hb-status",
         "z": "e5b48919.c32ed8",
         "name": "Front Door Light Switch",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "LUMI",
         "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ALUMIFront Door Light Switch00000043",
+        "device": "homebridge0E:3E:4E:48:18:3ALUMIFront Door Light Switch00000043",
         "conf": "914c287.6aa0ed8",
         "x": 410,
         "y": 760,
@@ -1256,10 +1340,10 @@
         "type": "hb-status",
         "z": "e5b48919.c32ed8",
         "name": "Garage Outdoor Light",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "null",
         "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3AnullGarage Outdoor Light00000043",
+        "device": "homebridge0E:3E:4E:48:18:3AnullGarage Outdoor Light00000043",
         "conf": "914c287.6aa0ed8",
         "x": 400,
         "y": 860,
@@ -1275,10 +1359,10 @@
         "type": "hb-status",
         "z": "e5b48919.c32ed8",
         "name": "Rear Outside Light",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "null",
         "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3AnullRear Outside Light00000043",
+        "device": "homebridge0E:3E:4E:48:18:3AnullRear Outside Light00000043",
         "conf": "914c287.6aa0ed8",
         "x": 390,
         "y": 660,
@@ -1294,10 +1378,10 @@
         "type": "hb-status",
         "z": "e5b48919.c32ed8",
         "name": "Patio Light 1",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "null",
         "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3AnullPatio Light 100000043",
+        "device": "homebridge0E:3E:4E:48:18:3AnullPatio Light 100000043",
         "conf": "914c287.6aa0ed8",
         "x": 370,
         "y": 560,
@@ -1313,10 +1397,10 @@
         "type": "hb-status",
         "z": "e5b48919.c32ed8",
         "name": "Patio Light 2",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "null",
         "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3AnullPatio Light 200000043",
+        "device": "homebridge0E:3E:4E:48:18:3AnullPatio Light 200000043",
         "conf": "914c287.6aa0ed8",
         "x": 370,
         "y": 960,
@@ -1332,10 +1416,10 @@
         "type": "hb-status",
         "z": "e5b48919.c32ed8",
         "name": "Xmas Lights Garage",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "innr",
         "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3AinnrXmas Lights Garage00000043",
+        "device": "homebridge0E:3E:4E:48:18:3AinnrXmas Lights Garage00000043",
         "conf": "914c287.6aa0ed8",
         "x": 400,
         "y": 1040,
@@ -1367,10 +1451,10 @@
         "type": "hb-status",
         "z": "e5b48919.c32ed8",
         "name": "Xmas Lights House",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "IKEA of Sweden",
         "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3AIKEA of SwedenXmas Lights House00000043",
+        "device": "homebridge0E:3E:4E:48:18:3AIKEA of SwedenXmas Lights House00000043",
         "conf": "914c287.6aa0ed8",
         "x": 390,
         "y": 1140,
@@ -1418,10 +1502,10 @@
         "type": "hb-control",
         "z": "e5b48919.c32ed8",
         "name": "Xmas Lights Garage",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "innr",
         "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3AinnrXmas Lights Garage00000043",
+        "device": "homebridge0E:3E:4E:48:18:3AinnrXmas Lights Garage00000043",
         "conf": "914c287.6aa0ed8",
         "x": 1140,
         "y": 1080,
@@ -1513,10 +1597,10 @@
         "type": "hb-status",
         "z": "d4bd59e4.4cd548",
         "name": "Study Stand Lamp",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "innr",
         "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3AinnrStudy Stand Lamp00000043",
+        "device": "homebridge0E:3E:4E:48:18:3AinnrStudy Stand Lamp00000043",
         "conf": "914c287.6aa0ed8",
         "x": 310,
         "y": 80,
@@ -1686,10 +1770,10 @@
         "type": "hb-control",
         "z": "e5b48919.c32ed8",
         "name": "Xmas Lights House",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "IKEA of Sweden",
         "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3AIKEA of SwedenXmas Lights House00000043",
+        "device": "homebridge0E:3E:4E:48:18:3AIKEA of SwedenXmas Lights House00000043",
         "conf": "914c287.6aa0ed8",
         "x": 1130,
         "y": 1180,
@@ -1734,7 +1818,7 @@
         "type": "function",
         "z": "e5b48919.c32ed8",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1752,7 +1836,7 @@
         "type": "function",
         "z": "e5b48919.c32ed8",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1770,7 +1854,7 @@
         "type": "function",
         "z": "e5b48919.c32ed8",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1788,7 +1872,7 @@
         "type": "function",
         "z": "e5b48919.c32ed8",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1853,10 +1937,10 @@
         "type": "hb-control",
         "z": "e5b48919.c32ed8",
         "name": "Patio Light 2",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "null",
         "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3AnullPatio Light 200000043",
+        "device": "homebridge0E:3E:4E:48:18:3AnullPatio Light 200000043",
         "conf": "914c287.6aa0ed8",
         "x": 1110,
         "y": 980,
@@ -1885,7 +1969,7 @@
         "type": "function",
         "z": "e5b48919.c32ed8",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1903,7 +1987,7 @@
         "type": "function",
         "z": "e5b48919.c32ed8",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1968,10 +2052,10 @@
         "type": "hb-control",
         "z": "e5b48919.c32ed8",
         "name": "Garage Outdoor Light",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "null",
         "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3AnullGarage Outdoor Light00000043",
+        "device": "homebridge0E:3E:4E:48:18:3AnullGarage Outdoor Light00000043",
         "conf": "914c287.6aa0ed8",
         "x": 1140,
         "y": 880,
@@ -2000,7 +2084,7 @@
         "type": "function",
         "z": "e5b48919.c32ed8",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2018,7 +2102,7 @@
         "type": "function",
         "z": "e5b48919.c32ed8",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2083,10 +2167,10 @@
         "type": "hb-control",
         "z": "e5b48919.c32ed8",
         "name": "Front Door Light Switch",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "LUMI",
         "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ALUMIFront Door Light Switch00000043",
+        "device": "homebridge0E:3E:4E:48:18:3ALUMIFront Door Light Switch00000043",
         "conf": "914c287.6aa0ed8",
         "x": 1150,
         "y": 780,
@@ -2115,7 +2199,7 @@
         "type": "function",
         "z": "e5b48919.c32ed8",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2133,7 +2217,7 @@
         "type": "function",
         "z": "e5b48919.c32ed8",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2198,10 +2282,10 @@
         "type": "hb-control",
         "z": "e5b48919.c32ed8",
         "name": "Rear Outside Light",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "null",
         "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3AnullRear Outside Light00000043",
+        "device": "homebridge0E:3E:4E:48:18:3AnullRear Outside Light00000043",
         "conf": "914c287.6aa0ed8",
         "x": 1130,
         "y": 680,
@@ -2212,7 +2296,7 @@
         "type": "function",
         "z": "e5b48919.c32ed8",
         "name": "",
-        "func": "if (msg.payload === true) {\n    msg.payload = {\"On\":true}\n} else {\n    msg.payload = {\"On\":false}\n}\nreturn msg;",
+        "func": "if (msg.payload === true) {\n    msg.payload = {\"On\":1}\n} else {\n    msg.payload = {\"On\":false}\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2230,7 +2314,7 @@
         "type": "function",
         "z": "e5b48919.c32ed8",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2248,7 +2332,7 @@
         "type": "function",
         "z": "e5b48919.c32ed8",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2313,10 +2397,10 @@
         "type": "hb-control",
         "z": "e5b48919.c32ed8",
         "name": "Patio Light 1",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "null",
         "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3AnullPatio Light 100000043",
+        "device": "homebridge0E:3E:4E:48:18:3AnullPatio Light 100000043",
         "conf": "914c287.6aa0ed8",
         "x": 1110,
         "y": 580,
@@ -2345,7 +2429,7 @@
         "type": "function",
         "z": "e5b48919.c32ed8",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2363,7 +2447,7 @@
         "type": "function",
         "z": "e5b48919.c32ed8",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2428,10 +2512,10 @@
         "type": "hb-control",
         "z": "e5b48919.c32ed8",
         "name": "Heating",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "CentraLite",
-        "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ACentraLiteHeating00000043",
+        "Service": "Switch",
+        "device": "homebridge0E:3E:4E:48:18:3ACentraLiteHeating00000049",
         "conf": "914c287.6aa0ed8",
         "x": 1100,
         "y": 480,
@@ -2460,7 +2544,7 @@
         "type": "function",
         "z": "e5b48919.c32ed8",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2478,7 +2562,7 @@
         "type": "function",
         "z": "e5b48919.c32ed8",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2565,10 +2649,10 @@
         "type": "hb-event",
         "z": "d4bd59e4.4cd548",
         "name": "Garage Outdoor Motion Sensor",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "SmartThings-v2",
         "Service": "Motion Sensor",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThings-v2Garage Outdoor Motion Sensor00000085",
+        "device": "homebridge0E:3E:4E:48:18:3ASmartThings-v2Garage Outdoor Motion Sensor00000085",
         "conf": "914c287.6aa0ed8",
         "x": 330,
         "y": 600,
@@ -2600,17 +2684,18 @@
         "type": "hb-event",
         "z": "d4bd59e4.4cd548",
         "name": "Landing Motion Sensor",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "SmartThings-v2",
         "Service": "Motion Sensor",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThings-v2Landing Motion Sensor00000085",
+        "device": "homebridge0E:3E:4E:48:18:3ASmartThings-v2Landing Motion Sensor00000085",
         "conf": "914c287.6aa0ed8",
         "x": 300,
         "y": 660,
         "wires": [
             [
                 "713f9bd1.49c984",
-                "c8a9e47f.a3f7f8"
+                "c8a9e47f.a3f7f8",
+                "8be2d35d.de0a3"
             ]
         ]
     },
@@ -2619,7 +2704,7 @@
         "type": "debug",
         "z": "d4bd59e4.4cd548",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2635,10 +2720,10 @@
         "type": "hb-event",
         "z": "d4bd59e4.4cd548",
         "name": "Landing Motion Sensor",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "SmartThings-v2",
-        "Service": "Light Sensor",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3ASmartThings-v2Landing Motion Sensor00000084",
+        "Service": "Motion Sensor",
+        "device": "homebridge0E:3E:4E:48:18:3ASmartThings-v2Landing Motion Sensor00000085",
         "conf": "914c287.6aa0ed8",
         "x": 280,
         "y": 780,
@@ -2660,8 +2745,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 630,
-        "y": 780,
+        "x": 510,
+        "y": 860,
         "wires": []
     },
     {
@@ -2724,13 +2809,16 @@
         "x": 160,
         "y": 460,
         "wires": [
-            []
+            [
+                "da80954e.167fa8"
+            ]
         ]
     },
     {
         "id": "da80954e.167fa8",
         "type": "cast-to-client",
         "z": "d4bd59e4.4cd548",
+        "d": true,
         "name": "",
         "url": "",
         "contentType": "",
@@ -2749,6 +2837,7 @@
         "id": "b7c4fbd5.7e2888",
         "type": "cast-to-client",
         "z": "d4bd59e4.4cd548",
+        "d": true,
         "name": "",
         "url": "",
         "contentType": "",
@@ -2773,11 +2862,996 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 600,
-        "y": 720,
+        "x": 680,
+        "y": 700,
         "wires": [
             [
                 "b7c4fbd5.7e2888"
+            ]
+        ]
+    },
+    {
+        "id": "e207ea31.0c89f8",
+        "type": "alexa-remote-routine",
+        "z": "d4bd59e4.4cd548",
+        "d": true,
+        "name": "",
+        "account": "ca741fe2.6647b",
+        "routineNode": {
+            "type": "speak",
+            "payload": {
+                "type": "announcement",
+                "text": {
+                    "type": "str",
+                    "value": "Landing Motion Detected - Alexa"
+                },
+                "devices": [
+                    "G090LF096467321H"
+                ]
+            }
+        },
+        "x": 740,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8be2d35d.de0a3",
+        "type": "function",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "func": "if (msg.payload.MotionDetected === true) {\nreturn msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 540,
+        "y": 740,
+        "wires": [
+            [
+                "e207ea31.0c89f8"
+            ]
+        ]
+    },
+    {
+        "id": "50d5e7d0.81d658",
+        "type": "hb-event",
+        "z": "675643bd.a6d5bc",
+        "name": "HVS Tills HVS Motion",
+        "Homebridge": "homebridge",
+        "Manufacturer": "Nest",
+        "Service": "Motion Sensor",
+        "device": "homebridge0E:3E:4E:48:18:3ANestHVS Tills HVS Motion00000085",
+        "conf": "914c287.6aa0ed8",
+        "x": 280,
+        "y": 160,
+        "wires": [
+            [
+                "e6539fd0.deca8"
+            ]
+        ]
+    },
+    {
+        "id": "6a9e90a0.678f6",
+        "type": "hb-event",
+        "z": "675643bd.a6d5bc",
+        "name": "HVS Tills HVS Sound",
+        "Homebridge": "homebridge",
+        "Manufacturer": "Nest",
+        "Service": "Motion Sensor",
+        "device": "homebridge0E:3E:4E:48:18:3ANestHVS Tills HVS Sound00000085",
+        "conf": "914c287.6aa0ed8",
+        "x": 290,
+        "y": 220,
+        "wires": [
+            [
+                "4a4d533d.17e87c"
+            ]
+        ]
+    },
+    {
+        "id": "4b02de5a.22cb7",
+        "type": "hb-event",
+        "z": "675643bd.a6d5bc",
+        "name": "HVS Tills HVS Person",
+        "Homebridge": "homebridge",
+        "Manufacturer": "Nest",
+        "Service": "Motion Sensor",
+        "device": "homebridge0E:3E:4E:48:18:3ANestHVS Tills HVS Person00000085",
+        "conf": "914c287.6aa0ed8",
+        "x": 260,
+        "y": 300,
+        "wires": [
+            [
+                "ea984d08.901f8"
+            ]
+        ]
+    },
+    {
+        "id": "7d0b4356.c1e5bc",
+        "type": "http request",
+        "z": "675643bd.a6d5bc",
+        "name": "Shop EOD",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://hvsapp.jonpetersen.co.uk/salelasttime",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 330,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25d2393f.a74396",
+        "type": "inject",
+        "z": "675643bd.a6d5bc",
+        "d": true,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 40,
+        "wires": [
+            [
+                "7d0b4356.c1e5bc"
+            ]
+        ]
+    },
+    {
+        "id": "9ad9fd70.e757",
+        "type": "http request",
+        "z": "675643bd.a6d5bc",
+        "name": "Shop EOD",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://hvsapp.jonpetersen.co.uk/salelasttime",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 730,
+        "y": 160,
+        "wires": [
+            [
+                "4efbe9dc.b440f8"
+            ]
+        ]
+    },
+    {
+        "id": "5637e6c9.a79f78",
+        "type": "alexa-remote-echo",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "account": "ca741fe2.6647b",
+        "config": {
+            "option": "command",
+            "value": {
+                "device": {
+                    "type": "str",
+                    "value": "G090LF096467321H"
+                },
+                "what": "play"
+            }
+        },
+        "x": 1340,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5a149445.8d1dcc",
+        "type": "debug",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "77bce5fc.20001c",
+        "type": "hb-event",
+        "z": "d4bd59e4.4cd548",
+        "name": "Virtual Switch 1",
+        "Homebridge": "homebridge",
+        "Manufacturer": "SmartThings-v2",
+        "Service": "Switch",
+        "device": "homebridge0E:3E:4E:48:18:3ASmartThings-v2Virtual Switch 100000049",
+        "conf": "914c287.6aa0ed8",
+        "x": 1080,
+        "y": 460,
+        "wires": [
+            [
+                "5a149445.8d1dcc",
+                "5637e6c9.a79f78"
+            ]
+        ]
+    },
+    {
+        "id": "f198501b.a8a71",
+        "type": "hb-event",
+        "z": "d4bd59e4.4cd548",
+        "name": "Garage Inside",
+        "Homebridge": "homebridge",
+        "Manufacturer": "Homebridge",
+        "Service": "Camera RTPStream Management",
+        "device": "homebridge0E:3E:4E:48:18:3AHomebridgeGarage Inside00000110",
+        "conf": "914c287.6aa0ed8",
+        "x": 680,
+        "y": 1020,
+        "wires": [
+            [
+                "2e4e752a.f2868a"
+            ]
+        ]
+    },
+    {
+        "id": "2e4e752a.f2868a",
+        "type": "debug",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "e6539fd0.deca8",
+        "type": "function",
+        "z": "675643bd.a6d5bc",
+        "name": "",
+        "func": "if (msg.payload.MotionDetected === 1) {\n    msg.payload = \"Motion Detected\";\n    return msg;\n} ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 540,
+        "y": 161,
+        "wires": [
+            [
+                "9ad9fd70.e757"
+            ]
+        ]
+    },
+    {
+        "id": "335d67c9.6756b8",
+        "type": "hb-event",
+        "z": "675643bd.a6d5bc",
+        "name": "HVS Tills HVS Zone - Zone 2",
+        "Homebridge": "homebridge",
+        "Manufacturer": "Nest",
+        "Service": "Motion Sensor",
+        "device": "homebridge0E:3E:4E:48:18:3ANestHVS Tills HVS Zone - Zone 200000085",
+        "conf": "914c287.6aa0ed8",
+        "x": 300,
+        "y": 460,
+        "wires": [
+            [
+                "980dc190.37efe"
+            ]
+        ]
+    },
+    {
+        "id": "1dbd2945.f86a77",
+        "type": "debug",
+        "z": "675643bd.a6d5bc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "4efbe9dc.b440f8",
+        "type": "function",
+        "z": "675643bd.a6d5bc",
+        "name": "",
+        "func": "if (msg.payload === \"EOD\") {\n   msg.payload = {}\n   msg.payload.content = \"Motion detected and shop is closed\"\n   msg.payload.chatId = 941652596;\n   msg.payload.type = \"message\";\n   return msg;\n} else {\n    msg.payload = {}\n    msg.payload.content = \"Motion detected and shop is open\"\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 900,
+        "y": 160,
+        "wires": [
+            [
+                "12b5f1be.7553ce",
+                "1dbd2945.f86a77"
+            ]
+        ]
+    },
+    {
+        "id": "4a4d533d.17e87c",
+        "type": "function",
+        "z": "675643bd.a6d5bc",
+        "name": "",
+        "func": "if (msg.payload.MotionDetected === 1) {\n    msg.payload = \"Sound Detected\";\n    return msg;\n} ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 540,
+        "y": 220,
+        "wires": [
+            [
+                "109ff31d.31d76d"
+            ]
+        ]
+    },
+    {
+        "id": "ea984d08.901f8",
+        "type": "function",
+        "z": "675643bd.a6d5bc",
+        "name": "",
+        "func": "if (msg.payload.MotionDetected === 1) {\n    msg.payload = \"Person Detected\";\n    return msg;\n} ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 540,
+        "y": 300,
+        "wires": [
+            [
+                "fa7562cc.5a50f"
+            ]
+        ]
+    },
+    {
+        "id": "980dc190.37efe",
+        "type": "function",
+        "z": "675643bd.a6d5bc",
+        "name": "",
+        "func": "if (msg.payload.MotionDetected === 1) {\n    msg.payload = \"Zone 2 Motion Detected\";\n    return msg;\n} ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 520,
+        "y": 460,
+        "wires": [
+            [
+                "c13e2169.04c1a"
+            ]
+        ]
+    },
+    {
+        "id": "109ff31d.31d76d",
+        "type": "http request",
+        "z": "675643bd.a6d5bc",
+        "name": "Shop EOD",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://hvsapp.jonpetersen.co.uk/salelasttime",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 730,
+        "y": 220,
+        "wires": [
+            [
+                "c6f8d7ad.d93398"
+            ]
+        ]
+    },
+    {
+        "id": "fa7562cc.5a50f",
+        "type": "http request",
+        "z": "675643bd.a6d5bc",
+        "name": "Shop EOD",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://hvsapp.jonpetersen.co.uk/salelasttime",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 730,
+        "y": 300,
+        "wires": [
+            [
+                "8d0160af.7bada"
+            ]
+        ]
+    },
+    {
+        "id": "c13e2169.04c1a",
+        "type": "http request",
+        "z": "675643bd.a6d5bc",
+        "name": "Shop EOD",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://hvsapp.jonpetersen.co.uk/salelasttime",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 730,
+        "y": 460,
+        "wires": [
+            [
+                "2295ebf4.64c7c4"
+            ]
+        ]
+    },
+    {
+        "id": "12b5f1be.7553ce",
+        "type": "telegram sender",
+        "z": "675643bd.a6d5bc",
+        "name": "HVSBOt",
+        "bot": "2d1be433.e4c01c",
+        "x": 1140,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ec9539fe.8929f8",
+        "type": "function",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "func": "msg.payload.CurrentTemperature = parseFloat(msg.payload.CurrentTemperature.toFixed(1))\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 700,
+        "y": 100,
+        "wires": [
+            [
+                "5c11d56d.0c01dc"
+            ]
+        ]
+    },
+    {
+        "id": "f7ae2762.b6a038",
+        "type": "function",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "func": "msg.payload.CurrentTemperature = parseFloat(msg.payload.CurrentTemperature.toFixed(1))\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 600,
+        "y": 160,
+        "wires": [
+            [
+                "2c610e22.12c9c2"
+            ]
+        ]
+    },
+    {
+        "id": "bce557dd.50c268",
+        "type": "function",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "func": "msg.payload.CurrentTemperature = parseFloat(msg.payload.CurrentTemperature.toFixed(1))\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 640,
+        "y": 220,
+        "wires": [
+            [
+                "cbeb9c03.ffdeb"
+            ]
+        ]
+    },
+    {
+        "id": "6291d32a.e0a3ec",
+        "type": "function",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "func": "msg.payload.CurrentTemperature = parseFloat(msg.payload.CurrentTemperature.toFixed(1))\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 620,
+        "y": 280,
+        "wires": [
+            [
+                "40771750.bb7618"
+            ]
+        ]
+    },
+    {
+        "id": "ed544574.914c18",
+        "type": "function",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "func": "msg.payload.CurrentTemperature = parseFloat(msg.payload.CurrentTemperature.toFixed(1))\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 640,
+        "y": 340,
+        "wires": [
+            [
+                "92ea7fee.19995"
+            ]
+        ]
+    },
+    {
+        "id": "1b53e988.df06a6",
+        "type": "function",
+        "z": "e5b48919.c32ed8",
+        "name": "",
+        "func": "msg.payload.CurrentTemperature = parseFloat(msg.payload.CurrentTemperature.toFixed(1))\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 620,
+        "y": 400,
+        "wires": [
+            [
+                "7c2a5595.9aaa4c"
+            ]
+        ]
+    },
+    {
+        "id": "c6f8d7ad.d93398",
+        "type": "function",
+        "z": "675643bd.a6d5bc",
+        "name": "",
+        "func": "if (msg.payload === \"EOD\") {\n   msg.payload = {}\n   msg.payload.content = \"Sound detected and shop is closed\"\n   msg.payload.chatId = 941652596;\n   msg.payload.type = \"message\";\n   return msg;\n} else {\n    msg.payload = {}\n    msg.payload.content = \"Sound detected and shop is open\"\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 900,
+        "y": 220,
+        "wires": [
+            [
+                "12b5f1be.7553ce",
+                "1dbd2945.f86a77"
+            ]
+        ]
+    },
+    {
+        "id": "8d0160af.7bada",
+        "type": "function",
+        "z": "675643bd.a6d5bc",
+        "name": "",
+        "func": "if (msg.payload === \"EOD\") {\n   msg.payload = {}\n   msg.payload.content = \"Person detected and shop is closed\"\n   msg.payload.chatId = 941652596;\n   msg.payload.type = \"message\";\n   return msg;\n} else {\n    msg.payload = {}\n    msg.payload.content = \"Person detected and shop is open\"\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 910,
+        "y": 302,
+        "wires": [
+            [
+                "12b5f1be.7553ce",
+                "1dbd2945.f86a77"
+            ]
+        ]
+    },
+    {
+        "id": "2295ebf4.64c7c4",
+        "type": "function",
+        "z": "675643bd.a6d5bc",
+        "name": "",
+        "func": "if (msg.payload === \"EOD\") {\n   msg.payload = {}\n   msg.payload.content = \"Zone 2 Motion detected and shop is closed\" \n   msg.payload.chatId = 941652596;\n   msg.payload.type = \"message\";\n   return msg;\n} else {\n    msg.payload = {}\n    msg.payload.content = \"Zone 2 Motion detected and shop is open\"\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 920,
+        "y": 460,
+        "wires": [
+            [
+                "12b5f1be.7553ce",
+                "1dbd2945.f86a77"
+            ]
+        ]
+    },
+    {
+        "id": "222877f7.9e2e18",
+        "type": "hb-event",
+        "z": "c4c03242.475c2",
+        "name": "Garage Inside",
+        "Homebridge": "homebridge",
+        "Manufacturer": "Homebridge",
+        "Service": "Motion Sensor",
+        "device": "homebridge0E:3E:4E:48:18:3AHomebridgeGarage Inside00000085",
+        "conf": "914c287.6aa0ed8",
+        "x": 250,
+        "y": 220,
+        "wires": [
+            [
+                "9052b9bd.ad1238"
+            ]
+        ]
+    },
+    {
+        "id": "d2a57a2e.0f6ff8",
+        "type": "hb-event",
+        "z": "c4c03242.475c2",
+        "name": "Drive",
+        "Homebridge": "homebridge",
+        "Manufacturer": "Homebridge",
+        "Service": "Motion Sensor",
+        "device": "homebridge0E:3E:4E:48:18:3AHomebridgeDrive00000085",
+        "conf": "914c287.6aa0ed8",
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "9052b9bd.ad1238"
+            ]
+        ]
+    },
+    {
+        "id": "5b615158.7ce8a",
+        "type": "hb-event",
+        "z": "c4c03242.475c2",
+        "name": "Garage Door",
+        "Homebridge": "homebridge",
+        "Manufacturer": "Homebridge",
+        "Service": "Motion Sensor",
+        "device": "homebridge0E:3E:4E:48:18:3AHomebridgeGarage Door00000085",
+        "conf": "914c287.6aa0ed8",
+        "x": 230,
+        "y": 520,
+        "wires": [
+            [
+                "9052b9bd.ad1238"
+            ]
+        ]
+    },
+    {
+        "id": "9052b9bd.ad1238",
+        "type": "debug",
+        "z": "c4c03242.475c2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "a6000e49.3f7f5",
+        "type": "hb-event",
+        "z": "c4c03242.475c2",
+        "name": "Garage Inside",
+        "Homebridge": "homebridge",
+        "Manufacturer": "Homebridge",
+        "Service": "Camera RTPStream Management",
+        "device": "homebridge0E:3E:4E:48:18:3AHomebridgeGarage Inside00000110",
+        "conf": "914c287.6aa0ed8",
+        "x": 230,
+        "y": 160,
+        "wires": [
+            [
+                "9052b9bd.ad1238"
+            ]
+        ]
+    },
+    {
+        "id": "5f0ea1da.f4982",
+        "type": "hb-event",
+        "z": "c4c03242.475c2",
+        "name": "Garage Inside",
+        "Homebridge": "homebridge",
+        "Manufacturer": "Homebridge",
+        "Service": "Microphone",
+        "device": "homebridge0E:3E:4E:48:18:3AHomebridgeGarage Inside00000112",
+        "conf": "914c287.6aa0ed8",
+        "x": 230,
+        "y": 100,
+        "wires": [
+            [
+                "9052b9bd.ad1238"
+            ]
+        ]
+    },
+    {
+        "id": "e11b0b0c.643258",
+        "type": "hb-event",
+        "z": "c4c03242.475c2",
+        "name": "Garage Door",
+        "Homebridge": "homebridge",
+        "Manufacturer": "Homebridge",
+        "Service": "Microphone",
+        "device": "homebridge0E:3E:4E:48:18:3AHomebridgeGarage Door00000112",
+        "conf": "914c287.6aa0ed8",
+        "x": 230,
+        "y": 640,
+        "wires": [
+            [
+                "9052b9bd.ad1238"
+            ]
+        ]
+    },
+    {
+        "id": "beea8366.69518",
+        "type": "hb-event",
+        "z": "c4c03242.475c2",
+        "name": "Garage Door",
+        "Homebridge": "homebridge",
+        "Manufacturer": "Homebridge",
+        "Service": "Camera RTPStream Management",
+        "device": "homebridge0E:3E:4E:48:18:3AHomebridgeGarage Door00000110",
+        "conf": "914c287.6aa0ed8",
+        "x": 230,
+        "y": 580,
+        "wires": [
+            [
+                "9052b9bd.ad1238"
+            ]
+        ]
+    },
+    {
+        "id": "a9f6f4d9.429998",
+        "type": "apple-find-me",
+        "z": "678ca26b.9ca2bc",
+        "account": "d8f93858.7b3648",
+        "name": "Apple Devices",
+        "triggerInterval": "60000",
+        "geoAPI": "OSM",
+        "distanceInMeter": "50",
+        "hereMapApiKey": "",
+        "googleMapsApiKey": "",
+        "places": [
+            {
+                "name": "PTC",
+                "lat": "51.137281",
+                "lon": "-0.620595"
+            },
+            {
+                "name": "Hydons Ball",
+                "lat": "51.147257",
+                "lon": "-0.603256"
+            }
+        ],
+        "x": 300,
+        "y": 460,
+        "wires": [
+            [
+                "73311cd7.6a9394"
+            ]
+        ]
+    },
+    {
+        "id": "9c3a9d89.25c9e",
+        "type": "debug",
+        "z": "678ca26b.9ca2bc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "42e0ede.0eb1314",
+        "type": "apple-find-me-playsound",
+        "z": "678ca26b.9ca2bc",
+        "account": "d8f93858.7b3648",
+        "name": "",
+        "deviceid": "dYgDxjNDw6CDFMli4Fi10FuXsvRpssQYi7mxiFvihSk=",
+        "subject": "Alarm Message",
+        "inputtype": "str",
+        "x": 380,
+        "y": 560,
+        "wires": [
+            [
+                "717b8543.34932c"
+            ]
+        ]
+    },
+    {
+        "id": "717b8543.34932c",
+        "type": "debug",
+        "z": "678ca26b.9ca2bc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "32506766.6c18d8",
+        "type": "apple-find-me-sendmessage",
+        "z": "678ca26b.9ca2bc",
+        "account": "d8f93858.7b3648",
+        "name": "",
+        "deviceid": "dYgDxjNDw6CDFMli4Fi10FuXsvRpssQYi7mxiFvihSk=",
+        "playsound": true,
+        "subject": "Important Message",
+        "text": "Test message",
+        "inputtype": "str",
+        "inputtypetext": "str",
+        "x": 380,
+        "y": 680,
+        "wires": [
+            [
+                "42e815bd.3371ec"
+            ]
+        ]
+    },
+    {
+        "id": "a811e4a5.fa91e8",
+        "type": "inject",
+        "z": "678ca26b.9ca2bc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 660,
+        "wires": [
+            [
+                "32506766.6c18d8"
+            ]
+        ]
+    },
+    {
+        "id": "42e815bd.3371ec",
+        "type": "debug",
+        "z": "678ca26b.9ca2bc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "b488610.86205a",
+        "type": "hb-event",
+        "z": "c4c03242.475c2",
+        "name": "Drive",
+        "Homebridge": "homebridge",
+        "Manufacturer": "Homebridge",
+        "Service": "Microphone",
+        "device": "homebridge0E:3E:4E:48:18:3AHomebridgeDrive00000112",
+        "conf": "914c287.6aa0ed8",
+        "x": 276,
+        "y": 347,
+        "wires": [
+            [
+                "9052b9bd.ad1238"
+            ]
+        ]
+    },
+    {
+        "id": "8ca3e7f7.51d1d8",
+        "type": "hb-event",
+        "z": "c4c03242.475c2",
+        "name": "Drive",
+        "Homebridge": "homebridge",
+        "Manufacturer": "Homebridge",
+        "Service": "Camera RTPStream Management",
+        "device": "homebridge0E:3E:4E:48:18:3AHomebridgeDrive00000110",
+        "conf": "914c287.6aa0ed8",
+        "x": 230,
+        "y": 400,
+        "wires": [
+            [
+                "9052b9bd.ad1238"
+            ]
+        ]
+    },
+    {
+        "id": "590a1bbe.696904",
+        "type": "hb-event",
+        "z": "c4c03242.475c2",
+        "name": "Drive",
+        "Homebridge": "homebridge",
+        "Manufacturer": "Homebridge",
+        "Service": "Camera RTPStream Management",
+        "device": "homebridge0E:3E:4E:48:18:3AHomebridgeDrive00000110",
+        "conf": "914c287.6aa0ed8",
+        "x": 270,
+        "y": 440,
+        "wires": [
+            [
+                "9052b9bd.ad1238"
+            ]
+        ]
+    },
+    {
+        "id": "73311cd7.6a9394",
+        "type": "function",
+        "z": "678ca26b.9ca2bc",
+        "name": "iPhone filter",
+        "func": "msg.payload = msg.payload.iPhone[0].locationInfo\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 500,
+        "y": 380,
+        "wires": [
+            [
+                "9c3a9d89.25c9e"
             ]
         ]
     }
