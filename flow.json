@@ -196,14 +196,6 @@
         "port": "8009"
     },
     {
-        "id": "a315b9f5.b6cdb8",
-        "type": "castv2-connection",
-        "name": "",
-        "target": "Study",
-        "host": "192.168.1.238",
-        "port": "8009"
-    },
-    {
         "id": "914c287.6aa0ed8",
         "type": "hb-conf",
         "username": "499-01-142"
@@ -316,28 +308,10 @@
         "verboselogging": false
     },
     {
-        "id": "a535d6a4.22a118",
-        "type": "telegram bot",
-        "botname": "samplebot",
-        "usernames": "",
-        "chatids": "",
-        "baseapiurl": "",
-        "pollinterval": "300"
-    },
-    {
         "id": "d8f93858.7b3648",
         "type": "apple-find-me-account",
         "name": "Jon",
         "showfmly": true
-    },
-    {
-        "id": "bb0e754e.70b108",
-        "type": "ui_group",
-        "name": "Default",
-        "tab": "77efcdfa.edd224",
-        "order": 1,
-        "disp": false,
-        "width": "6"
     },
     {
         "id": "77efcdfa.edd224",
@@ -346,14 +320,13 @@
         "icon": "dashboard"
     },
     {
-        "id": "d1e30622.0d3aa8",
-        "type": "homekit-accessory",
-        "accessoryName": "Connector",
-        "pinCode": "111-11-111",
-        "port": "",
-        "manufacturer": "Default Manufacturer",
-        "model": "Default Model",
-        "serialNo": "Default Serial Number"
+        "id": "a37015f0.0ab408",
+        "type": "google-api-config"
+    },
+    {
+        "id": "76213c81.b18464",
+        "type": "AnamicoAlarmPanel",
+        "name": "Test Alarm Panel"
     },
     {
         "id": "6105b1aa.1791e8",
@@ -1565,10 +1538,10 @@
         "type": "hb-control",
         "z": "d4bd59e4.4cd548",
         "name": "Study Stand Lamp",
-        "Homebridge": "Pear Tree Cottage",
+        "Homebridge": "homebridge",
         "Manufacturer": "innr",
         "Service": "Lightbulb",
-        "device": "Pear Tree Cottage0E:3E:4E:48:18:3AinnrStudy Stand Lamp00000043",
+        "device": "homebridge0E:3E:4E:48:18:3AinnrStudy Stand Lamp00000043",
         "conf": "914c287.6aa0ed8",
         "x": 1330,
         "y": 140,
@@ -1607,7 +1580,8 @@
         "wires": [
             [
                 "9e9e6ae9.9ba038",
-                "e9a57610.180f58"
+                "e9a57610.180f58",
+                "1acda9d9.d74d66"
             ]
         ]
     },
@@ -1632,7 +1606,7 @@
         "type": "function",
         "z": "d4bd59e4.4cd548",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1680,7 +1654,7 @@
         "type": "function",
         "z": "d4bd59e4.4cd548",
         "name": "",
-        "func": "if (msg.payload.On === true) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
+        "func": "if (msg.payload.On === 1) {\n    msg.payload = 'On'\n} else {\n    msg.payload = 'Off'\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3072,8 +3046,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1230,
-        "y": 320,
+        "x": 1270,
+        "y": 360,
         "wires": []
     },
     {
@@ -3090,7 +3064,6 @@
         "y": 460,
         "wires": [
             [
-                "5a149445.8d1dcc",
                 "5637e6c9.a79f78"
             ]
         ]
@@ -3105,8 +3078,8 @@
         "Service": "Camera RTPStream Management",
         "device": "homebridge0E:3E:4E:48:18:3AHomebridgeGarage Inside00000110",
         "conf": "914c287.6aa0ed8",
-        "x": 680,
-        "y": 1020,
+        "x": 150,
+        "y": 920,
         "wires": [
             [
                 "2e4e752a.f2868a"
@@ -3125,8 +3098,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 970,
-        "y": 1020,
+        "x": 450,
+        "y": 940,
         "wires": []
     },
     {
@@ -3195,10 +3168,7 @@
         "x": 900,
         "y": 160,
         "wires": [
-            [
-                "12b5f1be.7553ce",
-                "1dbd2945.f86a77"
-            ]
+            []
         ]
     },
     {
@@ -3324,8 +3294,8 @@
         "z": "675643bd.a6d5bc",
         "name": "HVSBOt",
         "bot": "2d1be433.e4c01c",
-        "x": 1140,
-        "y": 80,
+        "x": 1300,
+        "y": 300,
         "wires": [
             []
         ]
@@ -3451,10 +3421,7 @@
         "x": 900,
         "y": 220,
         "wires": [
-            [
-                "12b5f1be.7553ce",
-                "1dbd2945.f86a77"
-            ]
+            []
         ]
     },
     {
@@ -3462,7 +3429,7 @@
         "type": "function",
         "z": "675643bd.a6d5bc",
         "name": "",
-        "func": "if (msg.payload === \"EOD\") {\n   msg.payload = {}\n   msg.payload.content = \"Person detected and shop is closed\"\n   msg.payload.chatId = 941652596;\n   msg.payload.type = \"message\";\n   return msg;\n} else {\n    msg.payload = {}\n    msg.payload.content = \"Person detected and shop is open\"\n}\n\n",
+        "func": "var d = new Date(); // for now\nh = d.getHours(); // => 9\nm = d.getMinutes(); // =>  30\nvar timenow = h + ':' + m;\nif (msg.payload === \"EOD\") {\n   msg.payload = {}\n   msg.payload.content = `Person detected in the shop at ${timenow}`\n   msg.payload.chatId = 941652596;\n   msg.payload.type = \"message\";\n   return msg;\n} else {\n    msg.payload = {}\n    msg.payload.content = \"Person detected and shop is open\"\n}\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3471,8 +3438,8 @@
         "y": 302,
         "wires": [
             [
-                "12b5f1be.7553ce",
-                "1dbd2945.f86a77"
+                "1dbd2945.f86a77",
+                "31921800.120508"
             ]
         ]
     },
@@ -3489,10 +3456,7 @@
         "x": 920,
         "y": 460,
         "wires": [
-            [
-                "12b5f1be.7553ce",
-                "1dbd2945.f86a77"
-            ]
+            []
         ]
     },
     {
@@ -3664,7 +3628,8 @@
         "y": 460,
         "wires": [
             [
-                "73311cd7.6a9394"
+                "73311cd7.6a9394",
+                "9c3a9d89.25c9e"
             ]
         ]
     },
@@ -3673,7 +3638,7 @@
         "type": "debug",
         "z": "678ca26b.9ca2bc",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3707,7 +3672,7 @@
         "type": "debug",
         "z": "678ca26b.9ca2bc",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3772,7 +3737,7 @@
         "type": "debug",
         "z": "678ca26b.9ca2bc",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3852,6 +3817,316 @@
         "wires": [
             [
                 "9c3a9d89.25c9e"
+            ]
+        ]
+    },
+    {
+        "id": "96773b1e.9a78b8",
+        "type": "google geocoding",
+        "z": "678ca26b.9ca2bc",
+        "name": "",
+        "geocodeBy": "coordinates",
+        "address": "",
+        "lat": "51.137246176803",
+        "lon": "-0.6207127545",
+        "googleAPI": "a37015f0.0ab408",
+        "bounds": "",
+        "language": "",
+        "region": "",
+        "components": "",
+        "x": 920,
+        "y": 240,
+        "wires": [
+            [
+                "cf3e939d.6a062"
+            ]
+        ]
+    },
+    {
+        "id": "cf3e939d.6a062",
+        "type": "debug",
+        "z": "678ca26b.9ca2bc",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1210,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "6c98348b.45cb5c",
+        "type": "inject",
+        "z": "678ca26b.9ca2bc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 610,
+        "y": 220,
+        "wires": [
+            [
+                "96773b1e.9a78b8"
+            ]
+        ]
+    },
+    {
+        "id": "5622da9a.db5164",
+        "type": "AnamicoAlarmSensor",
+        "z": "d4bd59e4.4cd548",
+        "name": "Test Alarm",
+        "panel": "76213c81.b18464",
+        "alarmStates": "1",
+        "triggerType": "",
+        "x": 1410,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "eb1927b8.a42828",
+        "type": "hb-event",
+        "z": "d4bd59e4.4cd548",
+        "name": "Landing Motion Sensor",
+        "Homebridge": "homebridge",
+        "Manufacturer": "SmartThings-v2",
+        "Service": "Motion Sensor",
+        "device": "homebridge0E:3E:4E:48:18:3ASmartThings-v2Landing Motion Sensor00000085",
+        "conf": "914c287.6aa0ed8",
+        "x": 1000,
+        "y": 860,
+        "wires": [
+            [
+                "795ed5e6.fe83fc",
+                "f24a68c0.295cd8"
+            ]
+        ]
+    },
+    {
+        "id": "795ed5e6.fe83fc",
+        "type": "switch",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "MotionDetected === 1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1230,
+        "y": 860,
+        "wires": [
+            [
+                "5622da9a.db5164",
+                "f24a68c0.295cd8"
+            ]
+        ]
+    },
+    {
+        "id": "f24a68c0.295cd8",
+        "type": "debug",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1410,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "1acda9d9.d74d66",
+        "type": "debug",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "5abff45d.0e0c0c",
+        "type": "ui_colour_picker",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "label": "",
+        "group": "7c3f771a.742bb8",
+        "format": "hsl",
+        "outformat": "object",
+        "showSwatch": true,
+        "showPicker": true,
+        "showValue": true,
+        "showHue": false,
+        "showAlpha": false,
+        "showLightness": true,
+        "square": "false",
+        "dynOutput": "false",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "",
+        "x": 910,
+        "y": 260,
+        "wires": [
+            [
+                "c68be07c.60c32"
+            ]
+        ]
+    },
+    {
+        "id": "c68be07c.60c32",
+        "type": "change",
+        "z": "d4bd59e4.4cd548",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.h",
+                "pt": "msg",
+                "to": "payload.Hue",
+                "tot": "msg"
+            },
+            {
+                "t": "move",
+                "p": "payload.s",
+                "pt": "msg",
+                "to": "payload.Saturation",
+                "tot": "msg"
+            },
+            {
+                "t": "move",
+                "p": "payload.l",
+                "pt": "msg",
+                "to": "payload.Brightness",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "payload.a",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 360,
+        "wires": [
+            [
+                "5a149445.8d1dcc",
+                "3f888c9c.1e3584"
+            ]
+        ]
+    },
+    {
+        "id": "3f888c9c.1e3584",
+        "type": "hb-control",
+        "z": "d4bd59e4.4cd548",
+        "name": "Study Stand Lamp",
+        "Homebridge": "homebridge",
+        "Manufacturer": "innr",
+        "Service": "Lightbulb",
+        "device": "homebridge0E:3E:4E:48:18:3AinnrStudy Stand Lamp00000043",
+        "conf": "914c287.6aa0ed8",
+        "x": 1330,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "31921800.120508",
+        "type": "thingzi-time-check",
+        "z": "675643bd.a6d5bc",
+        "name": "",
+        "lat": "51.1818",
+        "lon": "-0.6131",
+        "ontype": "tod",
+        "ontimesun": "dusk",
+        "ontimetod": "16:00",
+        "onoffset": "",
+        "onrandomoffset": false,
+        "offtype": "tod",
+        "offtimesun": "dawn",
+        "offtimetod": "07:30",
+        "offoffset": "",
+        "offrandomoffset": false,
+        "mon": true,
+        "tue": true,
+        "wed": true,
+        "thu": true,
+        "fri": true,
+        "sat": true,
+        "sun": true,
+        "x": 1110,
+        "y": 360,
+        "wires": [
+            [
+                "12b5f1be.7553ce"
+            ]
+        ]
+    },
+    {
+        "id": "af1571f0.e314e",
+        "type": "inject",
+        "z": "675643bd.a6d5bc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload.MotionDetected",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 340,
+        "y": 380,
+        "wires": [
+            [
+                "ea984d08.901f8"
             ]
         ]
     }
